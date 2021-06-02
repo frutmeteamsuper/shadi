@@ -1,13 +1,7 @@
 import {RouterModule,Routes} from '@angular/router';
 import {
 	TestappComponent,
-/*	FruitproductsComponent,
-	FruitbannerComponent,
-	FruitbannerboxComponent,
-	FruitcestaComponent,
-	FruitfooterComponent,
-	FruittopbarComponent,
-	FruitcartComponent,*/
+
 	PagoComponent,
 	PrincipalComponent,
 	ShadibannerComponent,
@@ -33,13 +27,7 @@ const app_routes: Routes = [
 	{path:'shadislider',component:ShadisliderComponent},
 	{path:'shaditop',component:ShaditopComponent},
 	{path:'shadishop',component:ShadishopComponent},
-/*	{path:'fruittopbar',component:FruittopbarComponent},
-	{path:'fruitproducts',component:FruitproductsComponent},
-	{path:'fruitbanner',component:FruitbannerComponent},
-	{path:'fruitbannerbox',component:FruitbannerboxComponent},
-	{path:'fruitcesta',component:FruitcestaComponent},
-	{path:'fruitfooter',component:FruitfooterComponent},
-	{path:'fruitcart',component:FruitcartComponent},*/
+
 	{path:'pago',component:PagoComponent},
 	{path:'**',pathMatch:'full',redirectTo:''}
 	];

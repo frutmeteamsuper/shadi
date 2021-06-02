@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
  }
  loadAPI = null;  
-   url = "assets/assetsfruit/js/scripts.js";
+   // url = "assets/assetsfruit/js/scripts.js";
     ngOnInit() {
 
       if (this.swUpdate.isEnabled) {
@@ -34,19 +34,19 @@ export class AppComponent implements OnInit {
         }    
 
 
-  	 if (this._uw.loaded==true){
+  	/* if (this._uw.loaded==true){
           this.loadAPI = new Promise(resolve => {
             this.loadScript();
           });
-        }
+        }*/
         this._uw.loaded=true;
   }
- public loadScript() {
-      let node = document.createElement("script");
-      node.src = this.url;
-      node.type = "text/javascript";
-      node.async = true;
-      node.charset = "utf-8";
-      document.getElementsByTagName("head")[0].appendChild(node);
-    }
+ // public loadScript() {
+ //      let node = document.createElement("script");
+ //      node.src = this.url;
+ //      node.type = "text/javascript";
+ //      node.async = true;
+ //      node.charset = "utf-8";
+ //      document.getElementsByTagName("head")[0].appendChild(node);
+ //    }
 }
